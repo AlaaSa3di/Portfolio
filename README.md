@@ -26,4 +26,12 @@ This project is a personal **Portfolio Website** designed to showcase your skill
 - **HTML5**: To build the structure of the website.
 - **CSS3**: For styling and layout.
 - **JavaScript**: For interactivity.
-figma link: https://www.figma.com/design/Wh9n9HUJRm0xGyUCkOr3tL/Untitled?node-id=1-2&t=Al3Vx2mz7kCjZhQw-1
+## to view Live URL click here [Portfolio][1].
+
+
+[1]: https://alaasa3di.github.io/Portfolio/
+
+## to view wireframe & mockup click here [Figma design][2].
+
+
+[2]: https://www.figma.com/design/TPeScOYkDV2J8ipX4ue97c/Coffee?node-id=7-153&t=GA4gwhMnFBqwugBv-1
