@@ -60,7 +60,7 @@ nav ul li{
 }
 
 section {
-    padding: 100px 200px;
+    padding: 100px 150px;
 }
 
 .main {
@@ -73,7 +73,11 @@ section {
     background-position: center;
     background-attachment: fixed;
 }
-
+ .photo{
+    display: flex;
+    justify-self:end;
+    align-content: start;
+}
 .main h2 {
     color: #fff;
     font-size: 1.4em;
@@ -147,7 +151,7 @@ section {
 
 .card {
     background-color: #fff;
-    width: 10em;
+    width: 9.5em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
     padding: 25px;
@@ -180,6 +184,7 @@ section {
 .projects {
     background-color: #000016;
     padding-bottom:5px ;
+    padding-top: 70px;
 }
 
 .projects .content{
@@ -343,27 +348,51 @@ section {
 .contact .info p {
     font-size: 1.2em;
 }
+.About {
+    /* background-color: #000016; */
+    padding-bottom:5px ;
+}
+
 .About-me{
    display: flex;
    flex-direction: row;
-   justify-content: space-evenly;
-   align-items: center;
-
+   justify-content: space-between;
+   align-items: start;
 }
 .container-image{
-    width: 100;
-    height: 90%;
+    width: 150%;
+    height: 400px;
     display: flex;
   }
 .container-image img{
-    width:70%;
+    width:100%;
     height: 100%;
     left: 50%;
    
 }
-.container-txt p{
+.container-txt{
     display: flex;
-    align-items: start;
+    align-items: center;
+    justify-content: end;
+    height: 400px;
+    font-size: large;
+    margin-left: 75px;
+}
+/* .container-txt p{
+    display: flex;
+    align-items: center;
+} */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+ }
+.cont{
+    padding-top: 5px;
+    display:inline;
+
 }
 
 .footer {
@@ -397,6 +426,7 @@ section {
    cursor: pointer;
    user-select: none;
 }
+
 #menu span{
     display: block;
     width:33px;
@@ -492,6 +522,9 @@ input[type=text], select, textarea {
         font-weight: 300;
         padding: 0.6375em 1.8875em;
     }
+    .photo{
+        display: none;
+    }
     .project-card {
         min-height: 6em;
         width: 11em;
@@ -512,7 +545,8 @@ input[type=text], select, textarea {
         font-size: 0.8em;
         font-weight: 300;
         padding: 0.6375em 1.4875em;
-        /* justify-content: flex-start; */
+        margin: 0;
+        justify-self:center;
     }
     .preview-btn {
         width: 60px;
@@ -525,8 +559,6 @@ input[type=text], select, textarea {
     }
     .more-details {
         font-size: 0.6em;
-        margin-left: 5px;
-        /* justify-content: end; */
     }
     .social-icons a {
         font-size: 1.3em;
@@ -559,13 +591,16 @@ input[type=text], select, textarea {
         flex-direction: column;
         align-content: center;
         justify-self: center;
+        margin-top: 10px;
+        height: 200px;
      
      }
-     .container-image{
+     /* .container-image{
          width: 100rem;
          height: 120%;
          display: flex;
          justify-content: center;
+
        }
      .container-image img{
          width:100%;
@@ -573,10 +608,10 @@ input[type=text], select, textarea {
          left: 50%;
         
      }
-     .container-txt p{
+     .container-txt {
          display: flex;
          align-content: center;
-     }
+     } */
      .S-title {
         display: flex;
         justify-content: start;
@@ -615,20 +650,34 @@ input[type=text], select, textarea {
         width: 100%;
         height: 90%;
         display: flex;
+        justify-content: center;
       }
     .container-image img{
         width:70%;
         height: 100%;
-        left: 50%;
-       
+           
     }
-    .container-txt p{
+    .container-txt{
         display: flex;
+        flex-direction: column;
         align-items: start;
+        justify-items: center;
+        font-size:x-small;
+        margin: 0 20px 20px 20px;
+        
+    }
+    .container-image{
+        display:flex;
+    }
+    .contact .container-image{
+        display:none;
+    } 
+    #action{
+        height: 300px;
     }
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px){
     header{
         padding: 18px 30px;
     }
@@ -719,5 +768,36 @@ input[type=text], select, textarea {
          flex-direction: column;
          align-items: start;
      }
-     
+     .container-image{
+        width: 20rem;
+        height: 120%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+
+      }
+      .container-image img{
+        justify-self: center;
+      }
+      .About , #skills{
+        padding: 30px;
+      }
+      .About-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container-txt{
+        margin-right: 75px;
+
+      } 
+     .contact .container-image{
+        width: 70rem;
+        height: 120%;
+        align-self: start;
+    }
+    .contact{
+        padding: 30px;
+    }
+
 }
